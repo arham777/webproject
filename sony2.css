@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+}
+
+.head a {
+  font-size: 14px;
+}
+
+.head .rewards a {
+  color: rgb(0, 120, 218);
+  text-decoration: underline;
+}
+
+.head {
+  display: flex;
+  flex: 50%;
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+img {
+  width: 100px;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  padding-left: 12px;
+  border: none;
+  border-radius: 150px;
+}
+
+.menus {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  gap: 40px;
+  background-color: #1c1c1c;
+  color: white;
+  height: 50px;
+  align-items: center;
+}
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic .topic_name {
+  font-size: 18px;
+  color: rgb(20, 41, 58);
+  font-weight: 800;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main1;
+}
+.item4 {
+  grid-area: main2;
+}
+.item5 {
+  grid-area: main3;
+}
+.item6 {
+  grid-area: right;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "menu main1 main2 main3 right"
+    "menu main1 main2 main3 right"
+    "menu main1 main2 main3 right";
+  background-color: white;
+  border: 10px solid #1c1c1c;
+  gap: 50px;
+  padding: 10px;
+}
+
+.grid_container .item {
+  box-shadow: #1c1c1c 0 0 8px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.grid_container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  line-height: 0px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.item img {
+  width: 250px;
+  align-self: center;
+  align-content: center;
+}
+
+.item p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2196f3;
+}
+
+.item a span {
+  color: #585858;
+  font-weight: 400;
+}
